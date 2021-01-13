@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .blue
         let service = CustomerServices()
         service.fetchCustomer().subscribe(onNext: {customers in print(customers)}).disposed(by: disposeBag)
         // Do any additional setup after loading the view.
