@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+        print("hmm")
         let service = CustomerServices()
         service.fetchCustomer().subscribe(onNext: {customers in print(customers)}).disposed(by: disposeBag)
         // Do any additional setup after loading the view.
