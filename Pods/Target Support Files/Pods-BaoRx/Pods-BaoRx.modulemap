@@ -1,0 +1,6 @@
+framework module Pods_BaoRx {
+  umbrella header "Pods-BaoRx-umbrella.h"
+
+  export *
+  module * { export * }
+}
